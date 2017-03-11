@@ -3,6 +3,11 @@
     <div class="jumbotron">
           <h1>DashBoard</h1>
           <p>Hello <%= current_user.name %>, this is your own dashboard !</p>
+          <p>Name : <%= current_user.name %></p>
+          <p>Email : <%= current_user.email %></p>
+          <p>Surname : <%= current_user.surname %></p>
+          <p>Address : <%= current_user.address %></p>
+          <p>Birthday : <%= current_user.birthday %></p>
           <p><%= link_to "Home Page", index_path %></p>
         </div>
   </div>

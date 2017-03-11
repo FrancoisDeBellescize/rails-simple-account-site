@@ -19,6 +19,7 @@ class SessionsController < ApplicationController
   end
 
   def destroy
+    flash[:error] = "You have been disconnected"
     session[:user_id] = nil
     redirect_to '/login'
   end
