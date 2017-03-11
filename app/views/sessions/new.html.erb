@@ -1,0 +1,20 @@
+<div class="row">
+  <div class="col-md-4 col-md-offset-4">
+    <h1>Login</h1>
+
+    <%= form_tag '/login' do %>
+    <div class="form-group">
+      <%= text_field_tag :email, nil, class: "form-control", placeholder: "Email"%>
+    </div>
+    <div class="form-group">
+      <%= password_field_tag :password, nil, class: "form-control", placeholder: "Password" %>
+    </div>
+    <div class="form-group">
+      <%= submit_tag "Submit", class:"btn btn-primary btn-block" %>
+    </div>
+    <% end %>
+    <div class="bottom text-center">
+      New here ? <b><%= link_to 'Join us', signup_path %></b>
+    </div>
+  </div>
+</div>
